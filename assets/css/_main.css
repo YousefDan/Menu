@@ -1,0 +1,46 @@
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+p{
+    position: absolute;
+    top: 80px;
+    font-size: 28px;
+}
+li, a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+.wrapper-menu{
+    width: 250px;
+    height: auto;
+    background-color: #ff6f61;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sub-menu{
+   background-color: #394c7f;
+   max-height: 0;
+   overflow: hidden;
+   transition: all 1s linear;
+}
+.menu{
+    overflow: hidden;
+}
+.menu a{
+    overflow: hidden;
+    padding: 10px 10px;
+}
+.last-a{
+    border-radius: 0 0 10px 10px;
+}
+.menu:target .sub-menu{
+    max-height: 300px;
+}
+.sub-menu a{
+    border-bottom: 1px solid #162b66;
+}
